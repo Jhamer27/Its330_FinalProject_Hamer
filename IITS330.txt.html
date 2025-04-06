@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover America: Your Guide to Unforgettable US Destinations</title>
+    <style>
+        :root {
+            --primary-color: #3c3b6e;
+            --secondary-color: #b22234;
+            --background-color: #f5f1ef;
+            --font-color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            background-image: url(".venv/img/frank-mckenna-JB92NeJSxW4-unsplash.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header, footer {
+            background-color: var(--primary-color);
+            color: var(--font-color);
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: var(--secondary-color);
+            color: var(--font-color);
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: var(--font-color);
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .destination {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Finding America: A Guide to Unforgettable US Destinations</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newyork.html">New York City</a></li>
+            <li><a href="sanfrancisco.html">San Francisco</a></li>
+            <li><a href="neworleans.html">New Orleans</a></li>
+            <li><a href="grandcanyon.html">Grand Canyon</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome to Our American Travel Guide</h2>
+        <p>Come with us on a journey through some of America's most iconic destinations. From bustling cities to natural wonders, we've curated a list of must-visit locations that showcase the diverse beauty of the United States.</p>
+        <div class="destination-grid">
+            <div class="destination">
+                <h3>New York City</h3>
+                <img src="images/img/New folder (2)/new york 3.jpg" alt="New York City skyline">
+                <p>Experience New York.</p>
+            </div>
+            <div class="destination">
+                <h3>San Francisco</h3>
+                <img src="images/img/san fran trolly.jpg" alt="Golden Gate Bridge">
+                <p>Discover the charm of the Bay Area.</p>
+            </div>
+            <div class="destination">
+                <h3>New Orleans</h3>
+                <img src="images/img/new orlans.jpg" alt="French Quarter in New Orleans">
+                <p>Immerse yourself in jazz and food culture.</p>
+            </div>
+            <div class="destination">
+                <h3>Grand Canyon</h3>
+                <img src="images/img/golden gran canyon.jpg" alt=Grand Canyon">
+                <p>Bask in the wonder of the greatest canyon.</p>
+            </div>
+        </div>
+    </main>
+    <footer>Discover America © 2023</footer>
+</body>
+</html>

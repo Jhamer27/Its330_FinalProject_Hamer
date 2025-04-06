@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New York City Travel Guide</title>
+    <style>
+        :root {
+            --primary-color: #3c3b6e;
+            --secondary-color: #b22234;
+            --background-color: #f5f1ef;
+            --font-color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('/img/new-york-skyline.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: var(--font-color);
+        }
+        header, footer {
+            background-color: var(--primary-color);
+            color: var(--font-color);
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: var(--secondary-color);
+            color: var(--font-color);
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: var(--font-color);
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .attraction-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header__title">New York City Travel Guide</h1>
+    </header>
+
+    <nav class="nav" aria-label="Main navigation">
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="its330_finalproject_hamer.txt.html"
+               class="nav__link destination-card__link"
+               aria-label="Learn more about New York City">
+                Home
+            </a>
+        </li>
+    </ul>
+</nav>
+
+    <main class="main">
+        <section class="intro">
+            <h2 class="intro__title">Welcome to the Big Apple</h2>
+            <p class="intro__text">Discover the magic of New York City! From iconic skyscrapers to world-class museums, vibrant neighborhoods to Broadway shows, NYC offers an unparalleled urban experience for every type of traveler.</p>
+        </section>
+
+        <section id="attractions" class="attractions" aria-labelledby="attractions-heading">
+            <h2 id="attractions-heading" class="attractions__title">Must-Visit Attractions</h2>
+            <div class="attraction-grid">
+                <article class="attraction" id="statue-of-liberty">
+                    <h3 class="attraction__title">Statue of Liberty</h3>
+                    <figure>
+                        <img src="img/images/pierre-blache-VMNG8BYFQfs-unsplash.jpg" alt="Statue of Liberty" class="attraction__image">
+                        <figcaption>Symbol of freedom and democracy</figcaption>
+                    </figure>
+                    <p class="attraction__description">
+
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
